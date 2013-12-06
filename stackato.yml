@@ -1,0 +1,10 @@
+name: dexy-altitude
+framework:
+  name: python
+  runtime: python27
+processes:
+  web: dexy serve --port $PORT
+hooks:
+  post-staging:
+    - dexy setup
+    - dexy
