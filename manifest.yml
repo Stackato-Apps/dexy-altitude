@@ -1,0 +1,7 @@
+applications:
+- name: dexy-altitude
+  stackato:
+    hooks:
+      post-staging:
+      - dexy setup
+      - dexy

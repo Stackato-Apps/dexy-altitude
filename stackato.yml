@@ -1,5 +1,0 @@
-name: dexy-altitude
-hooks:
-  post-staging:
-    - dexy setup
-    - dexy
