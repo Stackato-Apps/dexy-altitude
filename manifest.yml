@@ -1,5 +1,6 @@
 applications:
 - name: dexy-altitude
+  memory: 128M
   stackato:
     hooks:
       post-staging:
