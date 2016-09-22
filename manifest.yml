@@ -1,8 +1,6 @@
 applications:
 - name: dexy-altitude
+  buildpack: https://github.com/cloudfoundry/python-buildpack
+  command: dexy setup && dexy && dexy serve --port $PORT
   memory: 128M
-  stackato:
-    hooks:
-      post-staging:
-      - dexy setup
-      - dexy
+  stack: cflinuxfs2
